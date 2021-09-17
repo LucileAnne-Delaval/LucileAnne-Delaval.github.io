@@ -1,10 +1,64 @@
+
+.index {
+    background: rgb(212, 212, 212);
+    margin: 1,5%;
+}
+
+@media (min-width:360px){
+    .index {
+        background: rgb(212, 212, 212);
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 2%;
+    }
+}
+
+
+
+
+.poster {
+    background: rgb(255, 255, 255);
+}
+
 img{
 max-width: 100%;
+display: block;
+height: auto;
+border: 3px solid;
+border-color: rgb(255, 255, 255);
 }
 
 .system{
     font-family: 'Quicksand', sans-serif;
+    grid-column: 1/3;
+    font-size:clamp(14px,3vw,28px);
 }
 .titre{
     font-family: 'Poiret One', cursive;
+    grid-column: 1/3;
+    font-size:clamp(18px,5vw,72px);
+}
+
+.sous-titre{
+    font-family: 'Poiret One', cursive;
+    grid-column: 1/3;
+}
+
+.large{
+    grid-column: 1/3;
+}
+
+.projet-6{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 2%;
+}
+.projet-6-1{
+    grid-column: 1/3;
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(16px,5vw,38px);
 }

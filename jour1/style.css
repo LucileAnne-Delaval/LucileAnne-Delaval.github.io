@@ -1,4 +1,10 @@
 img{
 max-width: 100%;
+}
 
+.system{
+    font-family: 'Quicksand', sans-serif;
+}
+.titre{
+    font-family: 'Poiret One', cursive;
 }

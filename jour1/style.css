@@ -2,17 +2,17 @@ body {
     background: rgb(212, 212, 212);
 }
 
-.header{
+.header {
     grid-template-columns: 100%;
-    margin:0pt;
-    text-align:right;
+    margin: 0pt;
+    text-align: right;
 }
 
 .index {
-    margin: 1,5%;
+    margin: 1, 5%;
 }
 
-@media (min-width:660px){
+@media (min-width:660px) {
     .index {
         background: rgb(212, 212, 212);
         display: grid;
@@ -22,57 +22,98 @@ body {
 }
 
 
+/* pages 4 à 2 colonnes */
+.quatre-colonnes {
+    background: rgb(255, 255, 255);
+    max-width: 100%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 10px;
+}
+
+
+@media (min-width:860px) {
+    .quatre-colonnes {
+        background: rgb(255, 255, 255);
+        max-width: 100%;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 10px;
+    }
+}
+
+.fond-poster {
+    max-width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-image: url(img/projet-1-recherches.jpg);
+}
+
+
 
 .poster {
     background: rgb(255, 255, 255);
 }
 
-img{
-max-width: 100%;
-display: block;
-height: auto;
-border: 3px solid;
-border-color: rgb(255, 255, 255);
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
 }
 
 
-.system{
+.system {
     font-family: 'Quicksand', sans-serif;
     grid-column: 1/3;
-    font-size:clamp(14px,3vw,28px);
+    font-size: clamp(14px, 3vw, 28px);
 }
-.titre{
+
+.titre {
     font-family: 'Poiret One', cursive;
     grid-column: 1/3;
-    font-size:clamp(18px,5vw,72px);
+    font-size: clamp(18px, 5vw, 72px);
     margin: 0pt;
 }
 
-.sous-titre{
+.sous-titre {
     font-family: 'Poiret One', cursive;
     grid-column: 1/3;
     margin: 0pt;
 }
 
-.large{
+.large {
     grid-column: 1/3;
 }
 
-.projet-6{
+.projet-6 {
     display: grid;
     grid-template-columns: 48% 48%;
     gap: 2%;
 }
-.projet-6-1{
+
+.projet-6-1 {
     grid-column: 1/3;
 }
-a{
-    color:rgb(255, 255, 255);
+
+a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
-    font-size: clamp(16px,5vw,38px);
+    font-size: clamp(16px, 5vw, 38px);
 }
 
+.grille {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 10px;
+}
 
 
 /* zoom au survol */
@@ -82,32 +123,27 @@ a{
     overflow: hidden;
     display: grid;
 }
+
 .image-zoom {
     transition: 0.4s;
 }
-.image-zoom:hover {
-    transform: scale(0.95);
-}
 
-.image-zoom-large{
-    transition: 0.4s;
-}
-.image-zoom-large:hover {
-    grid-column: 1/3;
+.image-zoom:hover {
     transform: scale(0.95);
 }
 
 /*parallax*/
 
-.div-image-parallax{
-    height: 1000px
+.div-image-parallax {
+    height: 500px;
 }
 
-.image-parallax{
+.image-parallax {
+    max-width: 100%;
     height: 100%;
     background-attachment: fixed;
-    background-position: right, left;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(img/projet-1.jpg);
+    background-size: 100%;
+    background-image: url(img/projet-7-0.jpg);
 }

@@ -248,11 +248,26 @@ img {
     max-width: 100%;
     height: 100%;
     background-attachment: fixed;
-    background-position:right;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(img/projet-2-0.jpg);
 }
+.div-image-fond-b {
+    height: 400px;
+    grid-column: 1/3;
+}
+
+.image-fond-b {
+    max-width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/projet-2-00.jpg);
+}
+
 
 /*specimen*/
 

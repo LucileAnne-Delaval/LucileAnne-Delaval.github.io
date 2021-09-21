@@ -2,19 +2,18 @@ body {
     background: rgb(212, 212, 212);
 }
 
-header {
-    grid-template-columns: 50% 50%;
-    margin: 0pt;
-    text-align: right;
-}
-.titre {
-    text-align: left;
-    color: rgb(255, 255, 255);
-}
 
 
 .index {
     margin: 1,5%;
+}
+
+.index img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
 }
 
 @media (min-width:660px) {
@@ -27,44 +26,7 @@ header {
 }
 
 
-/* pages 4 à 2 colonnes */
-.quatre-colonnes {
-    background: rgb(255, 255, 255);
-    max-width: 100%;
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    gap: 10px;
-}
 
-
-@media (min-width:860px) {
-    .quatre-colonnes {
-        background: rgb(255, 255, 255);
-        max-width: 100%;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 10px;
-    }
-}
-
-.fond-poster {
-    max-width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-image: url(img/projet-1-recherches.jpg);
-}
-
-
-
-.poster {
-    background: rgb(255, 255, 255);
-    margin-left: 15%;
-}
 
 img {
     max-width: 100%;
@@ -75,11 +37,6 @@ img {
 }
 
 
-.system {
-    font-family: 'Quicksand', sans-serif;
-    grid-column: 1/3;
-    font-size: clamp(14px, 3vw, 28px);
-}
 
 .sous-titre {
    display: block;
@@ -105,12 +62,6 @@ img {
     grid-column: 1/3;
 }
 
-a {
-    color: rgb(134, 134, 134);
-    text-decoration: none;
-    font-family: 'Jost', sans-serif;
-    font-size: clamp(16px, 5vw, 38px);
-}
 
 .grille {
     display: grid;
@@ -133,12 +84,181 @@ a {
 
 .image-zoom:hover {
     transform: scale(0.95);
+    opacity: 0.8;
+    
 }
 
-/*parallax*/
+/*PROJETS*/
+
+.projet {
+    background: #fff;
+}
+
+/* Header */
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 48px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    right: 70px;
+}
+
+.portfolio {
+    text-align: left;
+}
+
+.à-propos {
+    text-align: right;
+}
+
+.header a:hover {
+    margin-left: 24px;
+    text-decoration: underline;
+
+}
+
+.header-titre {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    left: 70px;
+    letter-spacing: 0;
+}
+
+
+/* Body */
+
+
+    .nom-projet {
+        display: none;
+    }
+
+@media (min-width:760px) {
+    .nom-projet {
+        display: block;
+        font-family: 'Jost', sans-serif;
+        font-weight: 100;
+        font-size: 100px;
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 286px;
+        left: -100px;
+    }
+}
+
+.system {
+    font-family: 'Quicksand', sans-serif;
+    grid-column: 1/3;
+    font-size: clamp(12px, 7vw, 20px);
+    color: rgb(175, 175, 175);
+}
+
+/* Galerie */
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border: 3px solid;
+    border-color: rgb(175, 175, 175);
+}
+
+@media (max-width:760px) {
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width:760px) {
+    .main {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        margin-left: 200px;
+        margin-top: 20px;
+        gap: 10px;
+        max-width: 100%;
+    }
+}
+/* pages 4 à 2 colonnes */
+.quatre-colonnes {
+    background: rgb(255, 255, 255);
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 10px;
+}
+
+
+@media (min-width:760px) {
+    .quatre-colonnes {
+        background: rgb(255, 255, 255);
+        max-width: 100%;
+        margin-left: 200px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+/*PROJETS*/
+
+/*posters*/
+.recherches-poster{
+    grid-column: 1/3;
+}
+@media (min-width:760px) {
+    .recherches-poster{
+        grid-column: 3/5;
+    }
+}
+
+/*gehry*/
+
+.full-screen {
+    grid-column : 1/3
+}
+
+.div-image-fond {
+    height: 400px;
+    grid-column: 1/3;
+}
+
+.image-fond {
+    max-width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/projet-2-0.jpg);
+}
+
+/*specimen*/
 
 .div-image-parallax {
     height: 500px;
+    grid-column: 1/3;
 }
 
 .image-parallax {
@@ -149,73 +269,4 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(img/projet-7-0.jpg);
-}
-
-
-/* test */
-
-.projet {
-    background: rgb(255, 255, 255);
-        max-width: 100%;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 20% 80%;
-        gap: 10px;
-}
-
-
-@media (min-width:860px) {
-.projet {
-    background: rgb(255, 255, 255);
-        max-width: 100%;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 10% 45% 45%;
-        gap: 10px;
-}
-}
-
-.work {
-    grid-column: 1;
-    grid-row: 1/2;
-    display: block;
-    writing-mode: vertical-lr;
-    text-orientation:sideways;
-    transform: rotate(180deg);
-    font-family: 'Jost', sans-serif;
-    font-size: 30px;
-    margin-left: 100%;
-} 
-
-@media (min-width:660px) {
-.work {
-    grid-column: 1;
-    grid-row: 1/3;
-    display: block;
-    writing-mode: vertical-lr;
-    text-orientation:sideways;
-    transform: rotate(180deg);
-    font-family: 'Jost', sans-serif;
-    font-size: 37px;
-    margin-left: 100%;
-
-}
-}
-
-.decale {
-    grid-column-start: 2;
-}
-
-.system-projet {
-    grid-column: 2/3;
-    font-family: 'Quicksand', sans-serif;
-    font-size: clamp(14px, 3vw, 28px);
-}
-
-@media (min-width:660px) {
-.system-projet {
-    grid-column: 2/4;
-    font-family: 'Quicksand', sans-serif;
-    font-size: clamp(14px, 3vw, 28px);
-}
 }

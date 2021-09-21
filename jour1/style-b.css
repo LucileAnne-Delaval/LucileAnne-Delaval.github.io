@@ -1,0 +1,107 @@
+/*PROJETS*/
+
+/* Header */
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 48px;
+    background: #fff;
+    padding: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    right: 70px;
+}
+
+.portfolio {
+    text-align: left;
+}
+
+.à-propos {
+    text-align: right;
+}
+
+.header a:hover {
+    margin-left: 24px;
+    text-decoration: underline;
+
+}
+
+.header-titre {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    left: 70px;
+    letter-spacing: 0;
+}
+
+
+/* Body */
+
+
+    .nom-projet {
+        display: none;
+    }
+
+@media (min-width:760px) {
+    .nom-projet {
+        display: block;
+        font-family: 'Jost', sans-serif;
+        font-weight: 100;
+        font-size: 100px;
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 286px;
+        left: -100px;
+    }
+}
+
+.system {
+    font-family: 'Quicksand', sans-serif;
+    grid-column: 1/3;
+    font-size: clamp(12px, 7vw, 20px);
+    color: rgb(175, 175, 175);
+}
+
+/* Gallerie */
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border: 3px solid;
+    border-color: rgb(175, 175, 175);
+}
+
+@media (max-width:760px) {
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width:760px) {
+    .main {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        margin-left: 200px;
+        margin-top: 20px;
+        gap: 10px;
+        max-width: 100%;
+    }
+}
+
+/*PROJETS*/

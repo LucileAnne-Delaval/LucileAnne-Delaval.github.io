@@ -1,11 +1,11 @@
 body {
-    background: rgb(212, 212, 212);
+    background: rgb(242, 247, 255);
 }
 
 
 
 .index {
-    margin: 1, 5%;
+    margin: 1,5%;
 }
 
 .index img {
@@ -18,7 +18,6 @@ body {
 
 @media (min-width:660px) {
     .index {
-        background: rgb(212, 212, 212);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -137,6 +136,15 @@ img {
     letter-spacing: 0;
 }
 
+.header-sous-titre {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    left: 70px;
+    letter-spacing: 0;
+    color:  rgb(195, 219, 255);
+}
+
 
 /* Body */
 
@@ -161,7 +169,7 @@ img {
 .system {
     font-family: 'Quicksand', sans-serif;
     grid-column: 1/3;
-    font-size: clamp(12px, 7vw, 20px);
+    font-size: clamp(16px, 3vw, 20px);
     color: rgb(175, 175, 175);
 }
 
@@ -169,6 +177,26 @@ img {
     text-decoration: underline;
     color:  rgb(175, 175, 175);
 }
+
+.system-petit {
+    font-family: 'Quicksand', sans-serif;
+    grid-column: 1/3;
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+}
+
+.ressources {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    grid-column: 1/3;
+    font-size: clamp(20px, 4vw, 28px);
+    color: rgb(0, 0, 0);
+}
+.ressources a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+
 
 /* Galerie */
 .main {
@@ -182,7 +210,7 @@ img {
     display: block;
     height: auto;
     border: 3px solid;
-    border-color: rgb(175, 175, 175);
+    border-color: rgb(230, 240, 255);
 }
 
 @media (max-width:760px) {
@@ -317,7 +345,7 @@ img {
     max-width: 100%;
     height: 100%;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(img/projet-7-0.jpg);

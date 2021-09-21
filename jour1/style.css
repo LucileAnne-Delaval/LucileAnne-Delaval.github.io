@@ -20,8 +20,9 @@ body {
     .index {
         background: rgb(212, 212, 212);
         display: grid;
-        grid-template-columns: 48% 48%;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
+        margin-right: 5px;
     }
 }
 
@@ -284,4 +285,37 @@ img {
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(img/projet-7-0.jpg);
+}
+
+
+/*du présent à l'histoire*/
+.div-image-fond-photo {
+    height: 300px;
+    grid-column: 1/3;
+}
+
+.image-fond-photo {
+    max-width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/projet-5-0.jpg);
+}
+
+/*écoute visuelle*/ 
+.div-image-fond-feuilles {
+    height: 300px;
+    grid-column: 1/3;
+}
+
+.image-fond-feuilles {
+    max-width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(img/projet-4-00.jpg);
 }

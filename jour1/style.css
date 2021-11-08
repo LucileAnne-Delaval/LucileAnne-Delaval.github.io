@@ -77,7 +77,6 @@ body {
 }
 
 .header a:hover {
-    margin-left: 24px;
     text-decoration: underline;
 
 }
